@@ -25,7 +25,7 @@ int main()
     //FIXME4: prompt user to enter their name and store the value in variable fixed
     cout << " Enter name: ";
     cin >> firstName; 
-    cout << " Nice meeting you, " << firstName << "!" << endl; 
+    cout << " Nice meeting you, " << firstName << "!!" << endl; 
     //FIXME5: greet the name using the variable as the following output fixed
     //must output: Nice meeting you, <name>! fixed
 

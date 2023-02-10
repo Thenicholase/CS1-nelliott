@@ -8,15 +8,26 @@ All about variables
 using namespace std;
 
 int main () {
-    int num1, num2;
+    int inputSeconds;
+    int numHours, numMins, numSeconds;
 
-    cout << "Please enter number1: ";
-    cin >> num1;
+    cout << "How many seconds are there: ";
+    cin >> inputSeconds;
 
-    cout << "Please enter number2: ";
-    cin >> num2;
+    numHours = inputSeconds/3600;
+    numMins = (inputSeconds/60)%60;
+    numSeconds = inputSeconds%60;
 
-    cout << num1 << " + " << num2 << " = " << num1 + num2 << endl;
+    cout << "From " << inputSeconds << " you have " << numHours << ":" << numMins << ":" << numSeconds << endl;
+    // int num1, num2;
+
+    // cout << "Please enter number1: ";
+    // cin >> num1;
+
+    // cout << "Please enter number2: ";
+    // cin >> num2;
+
+    // cout << num1 << " + " << num2 << " = " << num1 + num2 << endl;
   
     // string line3;
     // char ch;
