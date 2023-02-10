@@ -31,15 +31,15 @@ int main()
 
     ;cout << "My ASCII Art...\n\n";
 
-    string line1 = "                         |\\_/|   **********************    (\\_/)\n";
+    string line1 = "     |\\_/|                     **********************                 (\\_/)\n";
     cout << line1;
-    string line2 = " /  @  @ \\      	*                  ASCII Lab               *  	  (='.'=)\n";
+    string line2 = "   /  @  @ \\      	*                  ASCII Lab             *   (='.'=)\n";
     cout << line2;
-    string line3 = "  ( >   0  <   )       *          By: <Nicholas Elliott>      * 	( \" )_( \" )\n";
+    string line3 = " ( >   0  <   )       *          By: <Nicholas Elliott>      *     ( \" )_( \" )\n";
     cout << line3;
-    string line4 = "       >>x<<              *            CSCI 111              *          >>x<<\n";
+    string line4 = "     >>x<<              *            CSCI 111              *\n";
     cout << line4;
-    string line5 = "      /   O  \\       	     *****************************             /  O  \\\n";
+    string line5 = "   /   O  \\       	     *****************************\n";
     cout << line5;
     //FIXME6: use variable to print the second line line of the graphic fixed
     //FIXME7: print the third line of the graphics fixed
