@@ -18,8 +18,6 @@ using namespace std; //resolve cout, cin, and endl names
  
 //main entry point of the program
 int main()
-
-
 {
     string firstName; 
     //FIXME3: declare a variable to store name fixed
@@ -33,13 +31,13 @@ int main()
 
     ;cout << "My ASCII Art...\n\n";
 
-    string line1 = "                        |\\_/|   **********************    (\\_/)\n";
+    string line1 = "                         |\\_/|   **********************    (\\_/)\n";
     cout << line1;
     string line2 = " /  @  @ \\      	*                  ASCII Lab               *  	  (='.'=)\n";
     cout << line2;
-    string line3 = " ( >   0  <   )       *          By: <Nicholas Elliott>      * 	( \" )_( \" )\n";
+    string line3 = "  ( >   0  <   )       *          By: <Nicholas Elliott>      * 	( \" )_( \" )\n";
     cout << line3;
-    string line4 = "      >>x<<              *            CSCI 111              *          >>x<<\n";
+    string line4 = "       >>x<<              *            CSCI 111              *          >>x<<\n";
     cout << line4;
     string line5 = "      /   O  \\       	     *****************************             /  O  \\\n";
     cout << line5;
