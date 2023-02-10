@@ -22,14 +22,14 @@ int main()
 
 {
     string firstName; 
-    //FIXME3: declare a variable to store name
+    //FIXME3: declare a variable to store name fixed
 
-    //FIXME4: prompt user to enter their name and store the value in variable
+    //FIXME4: prompt user to enter their name and store the value in variable fixed
     cout << " Enter name: ";
     cin >> firstName; 
     cout << " Nice meeting you, " << firstName << "!" << endl; 
-    //FIXME5: greet the name using the variable as the following output
-    //must output: Nice meeting you, <name>!
+    //FIXME5: greet the name using the variable as the following output fixed
+    //must output: Nice meeting you, <name>! fixed
 
     ;cout << "My ASCII Art...\n\n";
 
@@ -43,14 +43,14 @@ int main()
     cout << line4;
     string line5 = "      /   O  \\       	     *****************************             /  O  \\\n";
     cout << line5;
-    //FIXME6: use variable to print the second line line of the graphic
-    //FIXME7: print the third line of the graphics
-    //FIXME8: use variable to print the fourth line
-    //FIXME9: use variable to print the fifth line
+    //FIXME6: use variable to print the second line line of the graphic fixed
+    //FIXME7: print the third line of the graphics fixed
+    //FIXME8: use variable to print the fourth line fixed
+    //FIXME9: use variable to print the fifth line fixed
     //Note: You can add more lines or print more ASCII arts of your choice if you'd like...
 
     cout << "\nGood bye... hit enter to exit the program: " << '\n';
-    //FIXME10: make the console wait for user input
+    //FIXME10: make the console wait for user input fixed
 
     return 0; //exit program by returning 0 status to the system
 }
