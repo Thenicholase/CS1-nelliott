@@ -42,4 +42,33 @@ int main ()
     cout << "===========\n";
     cout << "Word: _ _ _ _ _ _ _\n";
 
+    cout << "Stage 2" << endl;
+
+    cout << "Opposing player tries to guess your word one letter at a time" << endl;
+    cout << "If the opposing player is correct, you simply fill in the word" << endl;
+    cout << "If opposing player is wrong, you add a piece to the stickman on the gallow." << "As well as writing down the incorrect letter" << endl;
+    cout << "The first piece of the stickman will look like this..." << endl;
+
+    cout << "     |-----------------\n";
+    cout << "     |/         |\n";
+    cout << "     |          O\n";
+    cout << "     |\n";
+    cout << "     |\n";
+    cout << "     |\n";
+    cout << "     |\n";
+    cout << "===========\n";
+
+    cout << "Stage 3" << endl;
+    
+    cout << "Continue this process until the word is guessed, or the stickman is complete" << endl;
+    cout << "The second piece of the stickman will look like this..." << endl;
+
+    cout << "     |-----------------\n";
+    cout << "     |/         |\n";
+    cout << "     |          O\n";
+    cout << "     |          |\n";
+    cout << "     |\n";
+    cout << "     |\n";
+    cout << "     |\n";
+    cout << "===========\n";
 }
