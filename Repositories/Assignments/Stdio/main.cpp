@@ -71,4 +71,30 @@ int main ()
     cout << "     |\n";
     cout << "     |\n";
     cout << "===========\n";
+
+    cout << "Stage 4" << endl;
+
+    cout << "The next piece of the stickman will look like this..." << endl;
+
+    cout << "     |-----------------\n";
+    cout << "     |/         |\n";
+    cout << "     |          O\n";
+    cout << "     |          |\\\n";
+    cout << "     |\n";
+    cout << "     |\n";
+    cout << "     |\n";
+    cout << "===========\n";
+
+    cout << "Stage 5" << endl;
+
+    cout << "The next piece will be as seen below..." << endl;
+
+    cout << "     |-----------------\n";
+    cout << "     |/         |\n";
+    cout << "     |          O\n";
+    cout << "     |         /|\\\n";
+    cout << "     |\n";
+    cout << "     |\n";
+    cout << "     |\n";
+    cout << "===========\n";
 }
