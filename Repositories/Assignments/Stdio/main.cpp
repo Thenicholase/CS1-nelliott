@@ -1,6 +1,7 @@
 // Name: Nicholas Elliott
 // Section CSCI 111-001
 // Date: 02/13/23
+// Breaking down the stages of the hangman game
 #include <iostream>
 #include <string>
 
@@ -26,5 +27,19 @@ int main ()
     cout << "     |\n";
     cout << "     |\n";
     cout << "===========\n";
-    
+
+    cout << "Stage 1" << endl;
+
+    cout << "First, create a word for the opposing player to guess" << endl;
+
+    cout << "     |-----------------\n";
+    cout << "     |/         |\n";
+    cout << "     |\n";
+    cout << "     |\n";
+    cout << "     |\n";
+    cout << "     |\n";
+    cout << "     |\n";
+    cout << "===========\n";
+    cout << "Word: _ _ _ _ _ _ _\n";
+
 }
