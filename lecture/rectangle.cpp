@@ -12,47 +12,62 @@ Step 6: print area and perim
 #include <iostream>
 #include <string>
 #include <cstdio>
+#include <cstdlib>
 
 using namespace std;
 
-string promptName() {
-    string personName;
+string promptName();
+void greetperson(string);
 
-    cout << "Please enter your name: ";
-    getline(cin, personName);
+template <class t1, class t2>
+void promptsides(t1&, t2&);
 
-    return personName;
-}
+template <class t1, class t2, class t3>
+void calcarea(t1&, t2&, t3&);
 
-void greetperson(string playername) {
-    cout << "Welcome " << playername << " to my rectangle calculator" << endl;
-}
+void calcperim(int&, int&, int&);
+void printvals(int, int, int, int);
 
-int promptsides() {
-    int rectangleside;
-    cout << "Please enter the a side of a rectangle: " << endl;
-    cin >> rectangleside;
-    return rectangleside;
-}
+// float calcarea(float s1, float s2) {
+//     cout << "Inside float calcarea" << endl;
+//     float area;
+//     area = s1 * s2;
+//     return area;
 
-int calcarea(int s1, int s2) {
-    cout << "Inside int clacarea" << endl;
-    int area;
-    area = s1 * s2;
-    return area;
-}
+int main() {
+    string name;
+    int side1, side2;
+    int rectanglearea;
+//    int side1, side2;
+//    int rectanglearea;
+    int rectangleperim;
+    // prompt name
+    name = promptName();
+    // greet name
+    greetperson(name);
+    
+    //prompt for sides
+    promptsides<int, int>(side1, side2);
+    // side1 = promptsides();
+    // side2 = promptsides();
+    // cout << "DEBUG: side1: " << side1 << endl;
+    // cout << "DEBUG: side2: " << side2 << endl;
+    
+    //calc area
+    // side1 = 42.5;
+    // side2 = 12.3;
+    calcarea<int, int, int>(side1, side2, rectanglearea);
 
-float calcarea(float s1, float s2) {
-    cout << "Inside float calcarea" << endl;
-    float area;
-    area = s1 * s2;
-    return area;
-}
+    //calc perim
+    calcperim(side1, side2, rectangleperim);
 
-int calcperim( int s1, int s2) {
-    int perimiter;
-    perimiter = (2*s1) + (2*s2);
-    return perimiter;
+    cout << "DEBUG: Area: " << rectanglearea << endl;
+    // cout << "DEBUG: Perimiter: " << rectangleperim << endl;
+
+    // print values
+    printvals(rectanglearea, rectangleperim, side1, side2);
+
+    return 0;
 }
 
 void printvals(int area, int perim, int s1, int s2) {
@@ -61,40 +76,39 @@ void printvals(int area, int perim, int s1, int s2) {
     cout << "The rectangle with sides" << s1 << " and " << s2 << endl;
     cout << "Has an area of " << area << " and a perimiter of " << perim << endl;
      */
-
 }
 
-int main() {
-   string name;
-   float side1, side2;
-   float rectanglearea;
-//    int side1, side2;
-//    int rectanglearea;
-//    int rectangleperim;
-    // prompt name
-    // name = promptName();
-    // greet name
-    // greetperson(name);
-    
-    //prompt for sides
-    // side1 = promptsides();
-    // side2 = promptsides();
-    // cout << "DEBUG: side1: " << side1 << endl;
-    // cout << "DEBUG: side2: " << side2 << endl;
-    
-    //calc area
-    side1 = 42.5;
-    side2 = 12.3;
-    rectanglearea = calcarea(side1, side2);
+void calcperim( int &s1, int &s2, int &perimiter) {
+    // int perimiter;
+    perimiter = (2*s1) + (2*s2);
+    // return perimiter;
+}
 
-    //calc perim
-    // rectangleperim = calcperim(side1, side2);
+template <class t1, class t2, class t3>
+void calcarea(t1 &s1, t2 &s2, t3 &area) {
+    // cout << "Inside int clacarea" << endl;
+    // int area;
+    area = s1 * s2;
+    // return area;
+}
 
-    cout << "DEBUG: Area: " << rectanglearea << endl;
-    // cout << "DEBUG: Perimiter: " << rectangleperim << endl;
+template <class t1, class t2>
+void promptsides(t1 &side1, t2 &side2) {
+    // int rectangleside;
+    cout << "Please enter the a side of a rectangle seperated by a space: ";
+    cin >> side1 >> side2;
+    // return rectangleside;
+}
 
-    // print values
-    // printvals(rectanglearea, rectangleperim, side1, side2);
+void greetperson(string playername) {
+    cout << "Welcome " << playername << " to my rectangle calculator" << endl;
+}
 
-    return 0;
+string promptName() {
+    string personName;
+
+    cout << "Please enter your name: ";
+    getline(cin, personName);
+
+    return personName;
 }
