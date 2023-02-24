@@ -15,41 +15,51 @@ using namespace std;
 string promptname();
 void greetperson(string);
 
-void calcperim(float&, float&, float&, float&);
+// template<class t1, class t2, class t3, class t4>
+// void calcperim(t1&, t2&, t3&, t4&);
 
-template <class t1, class t2, class t3, class t4, class t5>
-void calcarea(t1&, t2&, t3&, t4&, t5&);
+// template <class t1, class t2, class t3, class t4, class t5>
+// void calcarea(t1&, t2&, t3&, t4&, t5&);
 
 template<class t1, class t2, class t3>
 void promptsides(t1&, t2&, t3&);
 
-void printvals(float, float, float, float, float);
+void printvals(double, double, double, double, double);
 
 int main() {
     string name;
-    float side1, side2, side3;
-    float triangleperim;
-    float step1;
-    float trianglearea;
+    double side1, side2, side3; //created variables
+    // float triangleperim;
+    // float step1;
+    // float trianglearea;
+    double triangleperim=0, trianglearea=0;
 
-    name = promptname();
-    greetperson(name);
+    name = promptname(); //promptname
+    greetperson(name); //greet the person
 
-    promptsides<float, float, float>(side1, side2, side3);
+    promptsides<double, double, double>(side1, side2, side3); //prompted for sides of trinagle
 
-    calcperim(side1, side2, side3, triangleperim);
-    calcarea<float, float, float, float, float>(side1, side2, side3, step1, trianglearea);
+    // calcperim(side1, side2, side3, triangleperim);
+    // calcarea<float, float, float, float, float>(side1, side2, side3, step1, trianglearea);
 
-    printvals(triangleperim, trianglearea, side1, side2, side3);
+    // printvals(triangleperim, trianglearea, side1, side2, side3);
+    triangleperim = side1 + side2 + side3; //calculated perimiter
+    trianglearea = sqrt(((side1 + side2 + side3) / 2) * (((side1 + side2 + side3) / 2) - side1) * (((side1 + side2 + side3) / 2) - side2) * (((side1 + side2 + side3) / 2) - side3)); //calculated area
+
+    cout << "The triangle has a perimiter of: " << triangleperim << endl; //output perimiter
+    cout << "The triangle has an area of: " << trianglearea << endl; //output area
+
+    printvals(triangleperim, trianglearea, side1, side2, side3); //printed values
 
     return 0;
 }
 
-    void printvals(float area, float perim, float s1, float s2, float s3) {
-        printf("The triangle with the sides %f, %f, and %f has a perimiter of %f and an area of %f\n", s1, s2, s3, perim, area);
+    void printvals(double area, double perim, double s1, double s2, double s3) {
+        printf("The triangle with the sides %f, %f, and %f has an area of %f and an perimiter of %f\n", s1, s2, s3, perim, area);
     }
 
-    void calcperim(float &s1, float &s2, float &s3, float &perimiter) {
+    template<class t1, class t2, class t3, class t4>
+    void calcperim(t1 &s1, t2 &s2, t3 &s3, t4 &perimiter) {
         perimiter = s1 + s2 + s3;
     }
 
