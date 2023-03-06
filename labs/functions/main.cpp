@@ -1,8 +1,8 @@
 /*
 Functions Lab
-Updated By: FIXME1
+Updated By: Nicholas Elliott
 CSCI 111
-Date: FIXME2
+Date: 03/06/23
 Program prompts the user to enter two points in the form (x1, y1) and (x2, y2) and finds the distance between the two points using a function.
 Algorithm steps:
    1. Define a function called findDistance(…) that takes four parameters x1, y1 and x2, y2 as two points
@@ -48,6 +48,7 @@ int main()
 {
     int x1, y1, x2, y2; // variables to store two points (x1, y1) and (x2, y2)
     char ch;
+    double answer;
 
     //FIXME-bonus - 10 bonus points - add loop until user wants to quit
     // the loop will execute the following block of code
@@ -60,10 +61,14 @@ int main()
         printf("(x1, y1) = (%d, %d)\n", x1, y1);
 
         cout << "Enter a second point in the form (x, y): ";
+        cin >> ch >> x2 >> ch >> y2 >> ch; 
+        printf("(x2, y2) = (%d, %d)\n", x2, y2); //#FIXED3#
         //FIXME3 - Read/parse the second point and store data into variables x2 and y2
+        test(); //#FIXED4#
         //FIXME4 - Call test function
-
+        answer = findDistance(x1, y1, x2, y2); //#FIXED5#
         //FIXME5 - call findDistance function passing proper arguments
+        printf("The distance between the two points is: %.4f\n", answer); //#FIXED6#
         //FIXME6 – Using printf function display the returned distance with proper description
     }
 
@@ -76,10 +81,12 @@ int main()
 
 double findDistance(int x1, int y1, int x2, int y2)
 {
+    double distance;
+    distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2)); //#FIXED7#
     // FIXME7 - Find the distance between (x1, y1) and (x2, y2)
     // following the algorithm in step 1
     // return the calculated distance
-    return 0.000000;
+    return distance;
 }
 
 // test function that test findDistance function with 3 test cases
