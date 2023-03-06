@@ -43,3 +43,13 @@ Status: Complete
 Location:   https://github.com/Thenicholase/CS1-nelliott/blob/main/Repositories/Assignments/Stdio/circle/circle.cpp
 Self Grade: 90
 Notes:  Fixed all the FIXME in the code and adjusted it until it ran correctly.
+
+Lab #3
+Name:   Nicholas Elliott
+Lab Name:   Functions
+Description:    Finding the distance between two points
+Due Date:   03/06/23
+Status: Complete
+Location:   https://github.com/Thenicholase/CS1-nelliott/tree/main/labs/functions
+Self Grade: 90
+Notes:  Fixed all the FIXME in the code and adjusted it until it ran correctly.
