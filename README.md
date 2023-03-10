@@ -32,6 +32,21 @@ Repository: https://github.com/Thenicholase/CS1-nelliott
 Notes: calculated area and perimiter of a triangle with the given sides
 
 
+
+Assignment #3
+Name: Nicholas Elliott
+Course: CSCI 111
+Section: 001
+Description: Testing multiple different math functions
+Due Date: 03/10/23
+Status: Done
+Semester: Spring 2023
+Mav Username: naelliott
+GitHub Username: TheNicholasE
+Self-Grade: 90/100
+Repository: https://github.com/Thenicholase/CS1-nelliott/commit/55e31d1c27770c700223b66ae1ca9af128544d43
+Notes: Completed all functions and tested.
+
 LABS:
 
 Lab #2
