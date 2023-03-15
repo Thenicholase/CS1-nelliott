@@ -68,3 +68,13 @@ Status: Complete
 Location:   https://github.com/Thenicholase/CS1-nelliott/tree/main/labs/functions
 Self Grade: 90
 Notes:  Fixed all the FIXME in the code and adjusted it until it ran correctly.
+
+Lab #4
+Name:   Nicholas Elliott
+Lab Name:   Functions
+Description:   Running multiple different functions and calling them.
+Due Date:   03/15/2023
+Status: Complete
+Location:   https://github.com/Thenicholase/CS1-nelliott/tree/main/labs/function
+Self Grade: 70
+Notes:  Fixed most of the FIXME in the code and adjusted it but could not get "findAverage" to properly run.
