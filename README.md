@@ -47,6 +47,24 @@ Self-Grade: 90/100
 Repository: https://github.com/Thenicholase/CS1-nelliott/commit/55e31d1c27770c700223b66ae1ca9af128544d43
 Notes: Completed all functions and tested.
 
+
+
+Assignment #4
+Name: Nicholas Elliott
+Course: CSCI 111
+Section: 001
+Description: Testing different conditionals and functions
+Due Date: 03/27/23
+Status: Done
+Semester: Spring 2023
+Mav Username: naelliott
+GitHub Username: TheNicholasE
+Self-Grade: 90/100
+Repository: https://github.com/Thenicholase/CS1-nelliott/blob/main/Assignments/Stdio/conditionals/conditionals.cpp
+Notes: Completed all functions and tested.
+
+
+
 LABS:
 
 Lab #2
