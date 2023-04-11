@@ -96,3 +96,13 @@ Status: Complete
 Location:   https://github.com/Thenicholase/CS1-nelliott/tree/main/labs/function
 Self Grade: 70
 Notes:  Fixed most of the FIXME in the code and adjusted it but could not get "findAverage" to properly run.
+
+Lab #6
+Name:   Nicholas Elliott
+Lab Name:   pointers and namespace
+Description:   using pointers and namespace
+Due Date:   03/31/2023
+Status: Complete
+Location:   https://github.com/Thenicholase/CS1-nelliott/tree/main/labs/pointers
+Self Grade: 80
+Notes:  Fixed FIXME and ran code until properly functioning.
