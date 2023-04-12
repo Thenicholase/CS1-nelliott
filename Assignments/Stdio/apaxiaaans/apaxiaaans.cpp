@@ -27,7 +27,7 @@ void tests();
 string solver(string);
 
 int main(int argc, char **argv) {
-
+    tests();
     kattis();
 
     return 0;
@@ -37,31 +37,30 @@ string solver(string apaxiaaanname) {
     int nameLength;
     nameLength=apaxiaaanname.length();
     string compactname(1, apaxiaaanname[0]);
-    for(int i=1; i<nameLength; i++){
+    for(int i=1; i<nameLength; i++) {
         if(apaxiaaanname[i] != apaxiaaanname[i-1]) {
             compactname += apaxiaaanname[i];
-            return compactname;
         }
     }
-    return "";
+    return compactname;
 }
 
 
 void kattis() {
     string apaxiaaanname;
-    int namelength;
-    namelength=apaxiaaanname.length();
+
 
     cout << "Please enter your apaxiaaan name: ";
     getline(cin,apaxiaaanname);
 
-    for(int i=0; i<namelength; i++) {
-    cout << apaxiaaanname << " translates to: " << solver(apaxiaaanname); 
-    }
+    cout << apaxiaaanname << " translates to: " << solver(apaxiaaanname) << endl;
 
  }
 
 void tests() {
-    assert(solver("aaaaaaaaaappppppppllleeeeeeeeeees") == "apples");
+    assert(solver("jjjjjjjaaammmmmaaaaallllll") == "jamal");
+    assert(solver("hhhhhiiiiiiiiinnnnrrrrryyyyy") == "hinry");
+    assert(solver("mmmmmmmmmaaaaaaaaaalllllaaaaakkkkkiiiiii") == "malaki");
 
+    cout << "All test cases passed!" << endl;
 }
