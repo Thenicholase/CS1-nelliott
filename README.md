@@ -63,6 +63,20 @@ Self-Grade: 90/100
 Repository: https://github.com/Thenicholase/CS1-nelliott/blob/main/Assignments/Stdio/conditionals/conditionals.cpp
 Notes: Completed all functions and tested.
 
+Assignment #6
+Name: Nicholas Elliott
+Course: CSCI 111
+Section: 001
+Description: Apaxiaaan names
+Due Date: 04/10/2023
+Status: Done
+Semester: Spring 2023
+Mav Username: naelliott
+GitHub Username: TheNicholasE
+Self-Grade: 80/100
+Repository: https://github.com/Thenicholase/CS1-nelliott/tree/main/Assignments/Stdio/apaxiaaans
+Notes: Completed all functions and tested.
+
 
 
 LABS:
