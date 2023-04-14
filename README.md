@@ -120,3 +120,13 @@ Status: Complete
 Location:   https://github.com/Thenicholase/CS1-nelliott/tree/main/labs/pointers
 Self Grade: 80
 Notes:  Fixed FIXME and ran code until properly functioning.
+
+Lab #8
+Name:   Nicholas Elliott
+Lab Name:   Arrays
+Description:   using arrays to find sum, max, min, and arrange numbers
+Due Date:   04/14/2023
+Status: Complete
+Location:   https://github.com/Thenicholase/CS1-nelliott/tree/main/labs/array
+Self Grade: 90
+Notes:  Fixed FIXME and ran code until properly functioning.
