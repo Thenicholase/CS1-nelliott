@@ -1,4 +1,8 @@
 /*
+Name: Nicholas Elliott
+Date: 04/14/2023
+
+Arrays
 FIXME1: Include program and programmer information, date, etc.
 The lab demostrates the use of array and some operations on array.
 */
@@ -54,12 +58,13 @@ void program() {
     printArray(nums, size);//print the array to check if the values are there
     findMaxAndMin(nums, size, max, min);
     printf("Max = %u\n", max);
-    //FIXME2: print Min value
+    printf("Min = %u\n", min); //#FIXED //FIXME2: print Min value
     printf("Sum = %lld\n",findSum(nums, size));
     cout << "Sorted list in ascending order:\n";
     bubbleSort(nums, size);
-    //FIXME3: print sorted array
-
+    for(size_t i=0; i<size; i++) {
+        cout << nums[i] << '\t' << endl; //#FIXED3 //FIXME3: print sorted array
+    }
     delete [] nums;
 }
 
@@ -89,7 +94,8 @@ void findMaxAndMin(int nums[], int len, int &max, int &min)
 		if (max < nums[i]) //compare max with each element and update max if necessary
 			max = nums[i];
 
-		//FIXEME4: compare min with each element and update min
+		if (min > nums[i])
+            min = nums[i]; //#FIXED4 //FIXEME4: compare min with each element and update min
 	}
 }
 
@@ -103,7 +109,9 @@ void bubbleSort(int nums[], int len)
 		for (j = 0; j < len-i-1; j++) {
 			// if two adjacent numbers are not in order, swap 'em
 			if (nums[j] > nums[j+1]) {
-				//FIXME5: swap the values of nums[j] and nums[j+1]
+				temp = nums[j];
+                nums[j] = nums[j+1];
+                nums[j+1] = temp; //#FIXED5 //FIXME5: swap the values of nums[j] and nums[j+1]
 				// can use built-in swap or implement your own swap
 				sorted = false;
 			}
@@ -115,6 +123,9 @@ void bubbleSort(int nums[], int len)
 big_int findSum(int nums[], int len)
 {
 	big_int sum = 0;
+    for (int i=0; i < len; i++) {
+        sum = sum + nums[i];
+    }
 	//FIXME6: iterate through nums array and add each element to sum
 	return sum;
 }
