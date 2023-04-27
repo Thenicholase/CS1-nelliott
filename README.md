@@ -77,6 +77,20 @@ Self-Grade: 80/100
 Repository: https://github.com/Thenicholase/CS1-nelliott/tree/main/Assignments/Stdio/apaxiaaans
 Notes: Completed all functions and tested.
 
+Assignment #8
+Name: Nicholas Elliott
+Course: CSCI 111
+Section: 001
+Description: Falling Apart
+Due Date: 04/21/2023
+Status: Done
+Semester: Spring 2023
+Mav Username: naelliott
+GitHub Username: TheNicholasE
+Self-Grade: 80/100
+Repository: https://github.com/Thenicholase/CS1-nelliott/blob/main/Assignments/Stdio/array/fallingapart.cpp
+Notes: Completed all functions and tested on Kattis.
+
 
 
 LABS:
@@ -128,5 +142,15 @@ Description:   using arrays to find sum, max, min, and arrange numbers
 Due Date:   04/14/2023
 Status: Complete
 Location:   https://github.com/Thenicholase/CS1-nelliott/tree/main/labs/array
+Self Grade: 90
+Notes:  Fixed FIXME and ran code until properly functioning.
+
+Lab #9
+Name:   Nicholas Elliott
+Lab Name:   Vectors
+Description:   converting numbers binary and octal 
+Due Date:   04/21/2023
+Status: Complete
+Location:   https://github.com/Thenicholase/CS1-nelliott/blob/main/labs/vector/main.cpp
 Self Grade: 90
 Notes:  Fixed FIXME and ran code until properly functioning.
